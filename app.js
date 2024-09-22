@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
 });
 
 // Shared Secret Files
-const secret_key = "";
+const secret_key = process.env.SECRET_KEY;
 console.log(`my secret password is ${secret_key}`);
 
 server.listen(port, hostname, () => {});
